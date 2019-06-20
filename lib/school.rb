@@ -3,10 +3,8 @@ class School
   attr_accessor :roster, :grade, :stundent 
   def initialize(name)
     @name = name
+    @roster = {}
     end 
-  def roster(roster = {})
-    @roster = roster 
-     end
    def add_student(student, grade)
     roster
     if @roster.keys.include?(grade)
